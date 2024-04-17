@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
 using GeometryLibrary;
 
-var featureManagement = new Dictionary<string, string> { { "FeatureManagement:Square", "true" }, { "FeatureManagement:Rectangle", "true" }, { "FeatureManagement:Triangle", "true" } };
+var featureManagement = new Dictionary<string, string> { { "FeatureManagement:Square", "false" }, { "FeatureManagement:Rectangle", "true" }, { "FeatureManagement:Triangle", "true" } };
 
 IConfigurationRoot configuration = new ConfigurationBuilder().AddInMemoryCollection(featureManagement).Build();
 
@@ -23,10 +23,10 @@ var s = Console.ReadLine();
 switch (s)
 {
     case "1":
-        Console.WriteLine("You have chosen Square");
+
         if (await featureManager.IsEnabledAsync("Square"))
         {
-            Console.WriteLine("Square is enabled.");
+            Console.WriteLine("You have chosen Square and it's enabled.");
 
             Console.WriteLine("Enter the length of the square:");
             int length = int.Parse(Console.ReadLine() ?? string.Empty);
@@ -35,13 +35,16 @@ switch (s)
             Console.WriteLine($"Area of the square: {square.CalculateArea()}");
             Console.WriteLine($"Perimeter of the square: {square.CalculatePerimeter()}");
         }
+        else
+        {
+            Console.WriteLine("Square is disabled.");
+        }
         break;
 
     case "2":
-        Console.WriteLine("You have chosen Rectangle");
         if (await featureManager.IsEnabledAsync("Rectangle"))
         {
-            Console.WriteLine("Rectangle is enabled.");
+            Console.WriteLine("You have chosen Rectangle and it's enabled.");
 
             Console.WriteLine("Enter the length of the rectangle:");
             double length = double.Parse(Console.ReadLine() ?? string.Empty);
@@ -53,13 +56,17 @@ switch (s)
             Console.WriteLine($"Area of the rectangle: {rectangle.CalculateArea()}");
             Console.WriteLine($"Perimeter of the rectangle: {rectangle.CalculatePerimeter()}");
         }
-
+        else
+        {
+            Console.WriteLine("Rectangle is disabled.");
+        }
         break;
+
     case "3":
         Console.WriteLine("You have chosen Triangle");
         if (await featureManager.IsEnabledAsync("Triangle"))
         {
-            Console.WriteLine("Triangle is enabled.");
+            Console.WriteLine("You have chosen Triangle and it's enabled.");
 
             Console.WriteLine("Enter the base length of the triangle:");
             double baseLength = double.Parse(Console.ReadLine() ?? string.Empty);
@@ -75,57 +82,13 @@ switch (s)
             Console.WriteLine($"Area of the triangle: {triangle.CalculateArea()}");
             Console.WriteLine($"Perimeter of the triangle: {triangle.CalculatePerimeter()}");
         }
+        else
+        {
+            Console.WriteLine("Triangle is disabled.");
+        }
         break;
 
     default:
         Console.WriteLine("Wrong choice");
         break;
 }
-
-// if (await featureManager.IsEnabledAsync("Square"))
-// {
-//     Console.WriteLine("Square is enabled.");
-
-//     Console.WriteLine("Enter the length of the square:");
-//     int length = int.Parse(Console.ReadLine() ?? string.Empty);
-
-//     var square = new Square(length);
-//     Console.WriteLine($"Area of the square: {square.CalculateArea()}");
-//     Console.WriteLine($"Perimeter of the square: {square.CalculatePerimeter()}");
-// }
-
-// if (await featureManager.IsEnabledAsync("Rectangle"))
-// {
-//     Console.WriteLine("Rectangle is enabled.");
-
-//     Console.WriteLine("Enter the length of the rectangle:");
-//     double length = double.Parse(Console.ReadLine() ?? string.Empty);
-//     Console.WriteLine("Enter the width of the rectangle:");
-//     double width = double.Parse(Console.ReadLine() ?? string.Empty);
-
-//     var rectangle = new Rectangle(length, width);
-
-//     Console.WriteLine($"Area of the rectangle: {rectangle.CalculateArea()}");
-//     Console.WriteLine($"Perimeter of the rectangle: {rectangle.CalculatePerimeter()}");
-// }
-
-// if (await featureManager.IsEnabledAsync("Triangle"))
-// {
-//     Console.WriteLine("Triangle is enabled.");
-
-//     Console.WriteLine("Enter the base length of the triangle:");
-//     double baseLength = double.Parse(Console.ReadLine() ?? string.Empty);
-//     Console.WriteLine("Enter the height of the triangle:");
-//     double height = double.Parse(Console.ReadLine() ?? string.Empty);
-//     Console.WriteLine("Enter the length of side A of the triangle:");
-//     double sideA = double.Parse(Console.ReadLine() ?? string.Empty);
-//     Console.WriteLine("Enter the length of side B of the triangle:");
-//     double sideB = double.Parse(Console.ReadLine() ?? string.Empty);
-
-//     var triangle = new Triangle(baseLength, height, sideA, sideB);
-
-//     Console.WriteLine($"Area of the triangle: {triangle.CalculateArea()}");
-//     Console.WriteLine($"Perimeter of the triangle: {triangle.CalculatePerimeter()}");
-// }
-
-
