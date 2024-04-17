@@ -1,84 +1,65 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GeometryLibrary;
 
 [TestClass]
 public class SquareTests
 {
     [TestMethod]
-    public void TestSquareArea_Length5()
+    public void Square_Method_Receives_Length_5_And_Returns_25_For_The_Area_Of_Square()
     {
-        // Arrange
-        var square = new Square(-5);
-
-        // Act
-        var area = square.CalculateArea();
-
-        // Assert
-        Assert.AreEqual(-25, area);
-    }
-
-    [TestMethod]
-    public void TestSquareArea_Length10()
-    {
-        // Arrange
-        var square = new Square(10);
-
-        // Act
-        var area = square.CalculateArea();
-
-        // Assert
-        Assert.AreEqual(100, area);
-    }
-
-    [TestMethod]
-    public void TestSquareArea_Length0()
-    {
-        // Arrange
-        var square = new Square(0);
-
-        // Act
-        var area = square.CalculateArea();
-
-        // Assert
-        Assert.AreEqual(0, area);
-    }
-
-    [TestMethod]
-    public void TestSquarePerimeter_Length5()
-    {
-        // Arrange
         var square = new Square(5);
 
-        // Act
-        var perimeter = square.CalculatePerimeter();
+        var ret = square.CalculateArea();
 
-        // Assert
-        Assert.AreEqual(20, perimeter);
+        Assert.AreEqual(25, ret);
     }
 
     [TestMethod]
-    public void TestSquarePerimeter_Length10()
+    public void Square_Method_Receives_Length_10_And_Returns_100_For_The_Area_Of_Square()
     {
-        // Arrange
         var square = new Square(10);
 
-        // Act
-        var perimeter = square.CalculatePerimeter();
+        var ret = square.CalculateArea();
 
-        // Assert
-        Assert.AreEqual(40, perimeter);
+        Assert.AreEqual(100, ret);
     }
 
     [TestMethod]
-    public void TestSquarePerimeter_Length0()
+    public void Square_Method_Receives_Length_0_And_Returns_0_For_The_Area_Of_Square()
     {
-        // Arrange
         var square = new Square(0);
 
-        // Act
-        var perimeter = square.CalculatePerimeter();
+        var ret = square.CalculateArea();
 
-        // Assert
-        Assert.AreEqual(0, perimeter);
+        Assert.AreEqual(0, ret);
+    }
+
+    [TestMethod]
+    public void Square_Method_Receives_Length_7_And_Returns_28_For_The_Perimeter_Of_Square()
+    {
+        var square = new Square(7);
+
+        var ret = square.CalculatePerimeter();
+
+        Assert.AreEqual(28, ret);
+    }
+
+    [TestMethod]
+    public void Square_Method_Receives_Length_12_And_Returns_48_For_The_Perimeter_Of_Square()
+    {
+        var square = new Square(12);
+
+        var ret = square.CalculatePerimeter();
+
+        Assert.AreEqual(48, ret);
+    }
+
+    [TestMethod]
+    public void Square_Method_Receives_Length_0_And_Returns_0_For_The_Perimeter_Of_Square()
+    {
+        var square = new Square(0);
+
+        var ret = square.CalculatePerimeter();
+
+        Assert.AreEqual(0, ret);
     }
 }

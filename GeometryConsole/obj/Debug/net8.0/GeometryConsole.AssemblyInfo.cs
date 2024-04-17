@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeometryConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa8fac3e12ff8f1c5484dc7576278dd82b0c9ca6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6510ada4a048bd616ea1e8e022f50efd904015ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeometryConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeometryConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

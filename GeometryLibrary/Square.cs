@@ -10,11 +10,13 @@ public class Square : IShape
 
     public double CalculateArea()
     {
-        return Length * Length;
+        var result = Length * Length;
+        return result;
     }
 
     public double CalculatePerimeter()
     {
-        return 4 * Length;
+        var result = 4 * Length;
+        return result;
     }
 }

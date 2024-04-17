@@ -17,11 +17,13 @@ public class Triangle : IShape
 
     public double CalculateArea()
     {
-        return 0.5 * baseLength * height;
+        var result = 0.5 * baseLength * height;
+        return result;
     }
 
     public double CalculatePerimeter()
     {
-        return baseLength + sideA + sideB;
+        var result = baseLength + sideA + sideB;
+        return result;
     }
 }

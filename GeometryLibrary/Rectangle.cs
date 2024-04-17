@@ -15,11 +15,13 @@ public class Rectangle : IShape
 
     public double CalculateArea()
     {
-        return length * width;
+        var result = length * width;
+        return result;
     }
 
     public double CalculatePerimeter()
     {
-        return 2 * (length + width);
+        var result = 2 * (length + width);
+        return result;
     }
 }
