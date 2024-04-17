@@ -1,0 +1,12 @@
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\bin\Debug\net8.0\GeometryLibrary.deps.json
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\bin\Debug\net8.0\GeometryLibrary.dll
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\bin\Debug\net8.0\GeometryLibrary.pdb
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.AssemblyInfoInputs.cache
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.AssemblyInfo.cs
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.sourcelink.json
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.dll
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\refint\GeometryLibrary.dll
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.pdb
+C:\Users\Meet Lathiya\OneDrive - Cambrian College\Modular Development\Assignment4_MD\GeometryLibrary\obj\Debug\net8.0\ref\GeometryLibrary.dll
