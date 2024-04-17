@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
 using GeometryLibrary;
 
-var featureManagement = new Dictionary<string, string> { { "FeatureManagement:Square", "false" }, { "FeatureManagement:Rectangle", "true" }, { "FeatureManagement:Triangle", "true" } };
+var featureManagement = new Dictionary<string, string> { { "FeatureManagement:Square", "true" }, { "FeatureManagement:Rectangle", "true" }, { "FeatureManagement:Triangle", "true" } };
 
 IConfigurationRoot configuration = new ConfigurationBuilder().AddInMemoryCollection(featureManagement).Build();
 
